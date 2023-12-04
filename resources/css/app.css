@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.details,.card,.form-group{
+    /* color: white; */
+    /* box-shadow: 3px 3px 3px white; */
+    @apply m-[50px] border p-5 dark:text-white shadow-md dark:shadow-white
+
+}
+.index{
+    @apply md:flex flex-wrap gap-10 justify-items-center py-10
+}
+
+.details:hover,.card:hover,.form-group:hover{
+    box-shadow: 3px 3px 3px rgb(128, 6, 6);
+    scale: 1.02;
+}
+.details{
+    @apply border p-5
+}
+.card-footer{
+    @apply flex flex-row gap-4 justify-center
+}
+.card-footer>a{
+    @apply border p-2 my-2 block
+}
+
+h1{
+    @apply text-lg font-bold
+}
+.btn-add{
+    @apply border z-10 fixed top-[80%] left-[80%] rounded-2xl text-white p-7
+}
+.form-group{
+    @apply text-white flex flex-col shadow-xl 
+}
+.btn-submit{
+    @apply border my-4 p-2
+}
+ .form-group>input{
+    @apply rounded-md my-2 text-black 
+ }
+ .title{
+    @apply text-center text-xl
+ }
+ .btn-add:hover,.btn-submit:hover{
+    @apply bg-slate-600
+ }
+
+ .card-footer>a:hover{
+    @apply bg-slate-600
+ }
+ 
